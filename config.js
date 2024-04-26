@@ -5,7 +5,7 @@ if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 process.env.NODE_OPTIONS = '--max_old_space_size=2560'//2.5
 const DB_URL =  process.env.DATABASE_URL || '';
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || '', //your ssid to run bot
+    SESSION_ID: process.env.SESSION_ID || 'inrl~7d4e2NOfx15590a75aa8becdde096b984d7d', //your ssid to run bot
     HEROKU: {
         API_KEY: process.env.HEROKU_API_KEY,
         APP_NAME: process.env.HEROKU_APP_NAME
@@ -20,19 +20,19 @@ module.exports = {
     PM_BLOCK : toBool(process.env.PM_BLOCK || "false"),
     BGMBOT : toBool(process.env.BGMBOT || "false"),
     CALL_BLOCK : toBool(process.env.CALL_BLOCK || "false"),
-    STATUS_VIEW : process.env.STATUS_VIEW || "false",
-    SAVE_STATUS : toBool(process.env.SAVE_STATUS || "false"),
+    STATUS_VIEW : process.env.STATUS_VIEW || "true",
+    SAVE_STATUS : toBool(process.env.SAVE_STATUS || "true"),
     ADMIN_SUDO_ACCESS: toBool(process.env.ADMIN_SUDO_ACCESS || "false"),
     DISABLE_PM: toBool(process.env.DISABLE_PM || "false"),
     DISABLE_GRP : toBool(process.env.DISABLE_GRP || "false"),
     ERROR_MSG : toBool(process.env.ERROR_MSG || "true"),
     AJOIN: toBool(process.env.AJOIN || 'false'),
     READ : process.env.READ ||  "false",//true, command
-    CHATBOT : process.env.CHATBOT || "false",//true, pm, group
+    CHATBOT : process.env.CHATBOT || "true",//true, pm, group
     REACT : process.env.REACT || "false",//true, command, emoji
     WARNCOUND : process.env.WARNCOUND || 5,
     BOT_INFO : process.env.BOT_INFO || "INRL-BOT-MD;INRL;https://i.imgur.com/DyLAuEh.jpg",
-    WORKTYPE : process.env.WORKTYPE || "private",
+    WORKTYPE : process.env.WORKTYPE || "public",
     PREFIX : process.env.PREFIX || "[.,!]",//both  .  and [.] equal, for multi prefix we use [] this
     LANG : process.env.LANG || "en",
     PERSONAL_MESSAGE: process.env.PERSONAL_MESSAGE || "null",
@@ -40,7 +40,7 @@ module.exports = {
     AUDIO_DATA : process.env.AUDIO_DATA || "INRL-BOT-MD;INRL;https://i.imgur.com/DyLAuEh.jpg",
     STICKER_DATA : process.env.STICKER_DATA || "inrl;inrl",
     BRAINSHOP: process.env.BRAINSHOP || '172372,nbjE0YAlyw3cpoMl',
-    SUDO : process.env.SUDO || "null",
+    SUDO : process.env.SUDO || "+233530925107",
     RMBG_KEY: process.env.RMBG_KEY,
     OPEN_AI: process.env.OPEN_AI,
     ELEVENLABS: process.env.ELEVENLABS,
